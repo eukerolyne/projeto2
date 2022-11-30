@@ -12,7 +12,7 @@ class ContainerAtv extends StatelessWidget{
         width: 152,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
-          color: Colors.black,
+          color: Color.fromARGB(255, 182, 24, 24),
         ),
       ),
     );
