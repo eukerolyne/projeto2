@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:projeto2/batepapo/batepapopage.dart';
-import 'package:projeto2/calendario/calendario.dart';
 import 'package:projeto2/inicial/conteudoInicial.dart';
 import 'package:projeto2/disciplinas/disciplinaspage.dart';
-import 'package:projeto2/calendario/calendario.dart';
 import 'package:projeto2/perfil/perfilpage.dart';
 
 import '../calendario/calendarioPage.dart';
 
 class InicialPage extends StatefulWidget {
   const InicialPage({Key? key}) : super(key: key);
+  
 
   @override
   State<StatefulWidget> createState() => _InicialPageState();

@@ -15,7 +15,9 @@ class CalendarioPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.black)),
       ),
-      body: Calendario(),
+      body: SingleChildScrollView( 
+        child: Calendario(),
+        ),
       backgroundColor: Colors.white,
     );
   }
