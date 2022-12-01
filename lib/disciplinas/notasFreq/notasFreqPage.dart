@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:projeto2/batepapo/containers/containerBP.dart';
+import 'package:projeto2/disciplinas/notasFreq/containerFreq.dart';
+import 'package:projeto2/disciplinas/notasFreq/containerNotas.dart';
 
-class BatePapoPage extends StatefulWidget {
-  const BatePapoPage({super.key});
+class NotasFreqPage extends StatefulWidget {
+  const NotasFreqPage({super.key});
 
   @override
-  State<BatePapoPage> createState() => _BatePapoPageState();
+  State<NotasFreqPage> createState() => _NotasFreqPageState();
 }
 
-class _BatePapoPageState extends State<BatePapoPage> {
+class _NotasFreqPageState extends State<NotasFreqPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Bate-Papo",
+          "Notas e Frequência",
           style: TextStyle(
               fontSize: 24, 
               fontWeight: FontWeight.bold, 
@@ -29,7 +30,8 @@ class _BatePapoPageState extends State<BatePapoPage> {
             child: Container(
               child: Column(
                 children: [
-                  ContainerBP(),
+                  ContainerNotas(),
+                  ContainerFrequencia(),
                 ],
               ),
             ),

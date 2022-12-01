@@ -39,7 +39,7 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
-                ),
+              ),
             ),
             SizedBox(
               height: 10,
@@ -59,7 +59,7 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
-                ),
+              ),
             ),
             SizedBox(
               height: 10,
@@ -73,12 +73,10 @@ class LoginPage extends StatelessWidget {
                   backgroundColor: MaterialStateProperty.all<Color>(
                       Color.fromRGBO(242, 135, 5, 1)),
                 ),
-                onPressed: () {
-                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => InicialPage()),
-                   );
-                },
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InicialPage()),
+                ),
                 child: const Text(
                   "Entrar",
                   style: TextStyle(
