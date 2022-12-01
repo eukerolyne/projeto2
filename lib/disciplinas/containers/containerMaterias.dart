@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto2/disciplinas/notasFreq/notasFreqPage.dart';
 
 class ContainerMateria extends StatelessWidget {
   const ContainerMateria({Key? key}) : super(key: key);
@@ -8,7 +9,9 @@ class ContainerMateria extends StatelessWidget {
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(
-          top: 22, right: 6, left: 6,
+          top: 22,
+          right: 6,
+          left: 6,
         ),
         child: Container(
           height: 88,
@@ -17,6 +20,17 @@ class ContainerMateria extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
             color: Color.fromRGBO(217, 217, 217, 100),
           ),
+          child: ElevatedButton(
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    Color.fromRGBO(1, 46, 64, 1)),
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => NotasFreqPage()));
+              },
+              child: Text("Acessar")),
         ),
       ),
     );

@@ -16,7 +16,7 @@ class ContainerNotas extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
             color: Color.fromRGBO(217, 217, 217, 100),
-          ),           
+          ),
         ),
       ),
     );
