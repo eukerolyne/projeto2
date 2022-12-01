@@ -4,8 +4,6 @@ import 'package:projeto2/inicial/conteudoInicial.dart';
 import 'package:projeto2/disciplinas/disciplinaspage.dart';
 import 'package:projeto2/perfil/perfilpage.dart';
 
-import '../calendario/calendarioPage.dart';
-
 class InicialPage extends StatefulWidget {
   const InicialPage({Key? key}) : super(key: key);
   
@@ -21,7 +19,6 @@ class _InicialPageState extends State<InicialPage> {
     final _kTabPages = <Widget>[
       const Center(child: ConteudoInicialPage()),
       const Center(child: DisciplinasPage()),
-      const Center(child: CalendarioPage()),
       const Center(child: BatePapoPage()),
       const Center(child: PefilPage()),
     ];
@@ -30,8 +27,6 @@ class _InicialPageState extends State<InicialPage> {
           icon: Icon(Icons.home), label: 'Inicio'),
       const BottomNavigationBarItem(
           icon: Icon(Icons.task), label: 'Disciplinas'),
-      const BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_month), label: 'Calendário'),
       const BottomNavigationBarItem(
           icon: Icon(Icons.forum), label: 'Bate-papo'),
       const BottomNavigationBarItem(

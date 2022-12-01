@@ -10,20 +10,24 @@ class ConteudoInicialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(3, 166, 150, 1),
+        backgroundColor: Colors.white,
         title: const Text("Olá Kerolyne",
             style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Colors.white)),
-      ),
+                color: Colors.black87)),      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 24),
-          child: Row(
+          child: Column(
             children: [
-              ContainerAtv(),
-              ContainerEvent(),
+              Row(
+                children: [
+                  ContainerAtv(),
+                  ContainerEvent(),
+                ],
+              ),
+              ContainerCalendar(),
             ],
           ),
         ),

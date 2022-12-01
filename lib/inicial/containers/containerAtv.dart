@@ -6,13 +6,13 @@ class ContainerAtv extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Padding(
-      padding: const EdgeInsets.only(top: 22, right: 20),
+      padding: const EdgeInsets.only(top: 22, right: 6, left: 12),
       child: Container(
         height: 264,
         width: 152,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
-          color: Colors.black,
+          color: Color.fromRGBO(217, 217, 217, 100),
         ),
       ),
     );

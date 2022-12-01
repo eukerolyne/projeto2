@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import '../inicial/navigationbar.dart';
+import '../navigationbar.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
