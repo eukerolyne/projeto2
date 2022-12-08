@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:projeto2/disciplinas/envioPag/containerDescricao.dart';
+import 'package:projeto2/disciplinas/envioPag/containerDetalhes.dart';
+import 'package:projeto2/disciplinas/envioPag/containerEnvio.dart';
+import 'package:projeto2/disciplinas/envioPag/containerInfoAtv.dart';
 import 'package:projeto2/disciplinas/materiasPag/containerAula.dart';
 import 'package:projeto2/disciplinas/materiasPag/containerInfoProf.dart';
 
-class MateriasPage extends StatefulWidget {
-  const MateriasPage({super.key});
+class EnvioPage extends StatefulWidget {
+  const EnvioPage({super.key});
 
   @override
-  State<MateriasPage> createState() => _MateriasPageState();
+  State<EnvioPage> createState() => _EnvioPageState();
 }
 
-class _MateriasPageState extends State<MateriasPage> {
+class _EnvioPageState extends State<EnvioPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
-          "Matemática",
+          "Atividade 19/09",
           style: TextStyle(
               fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
         ),
@@ -29,8 +33,32 @@ class _MateriasPageState extends State<MateriasPage> {
             child: Container(
               child: Column(
                 children: [
-                  ContainerInfoProf(),
-                  ContainerAula(),
+                  ContainerInfoAtv(),
+                  ContainerDescricao(),
+                  ContainerEnviar(),
+                  ContainerDetalhes(),
+                  Container(
+                    margin: const EdgeInsets.all(10.0),
+                    child: SizedBox(
+                      width: double.tryParse('156'),
+                      child: ElevatedButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Color.fromRGBO(242, 135, 5, 1)),
+                        ),
+                        onPressed: () {},
+                        child: const Text(
+                          "Enviar",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

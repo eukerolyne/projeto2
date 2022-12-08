@@ -31,12 +31,6 @@ class DisciplinasPage extends StatelessWidget {
                 children: [
                   ContainerAtveTrab(),
                   ContainerMateria(),
-                  ContainerMateria(),
-                  ContainerMateria(),
-                  ContainerMateria(),
-                  ContainerMateria(),
-                  ContainerMateria(),
-                  ContainerMateria(),
                   Container(
                     margin: const EdgeInsets.all(10.0),
                     child: SizedBox(

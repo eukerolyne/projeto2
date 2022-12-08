@@ -39,11 +39,50 @@ class ContainerAtv extends StatelessWidget {
                     )
                   ],
                 ),
-              )
+              ),
+              Table(
+                defaultColumnWidth: FixedColumnWidth(148),
+                border: TableBorder(
+                  horizontalInside: BorderSide(
+                    color: Colors.black,
+                    style: BorderStyle.solid,
+                    width: 1.0,
+                  ),
+                  verticalInside: BorderSide(
+                    color: Colors.black,
+                    style: BorderStyle.solid,
+                    width: 1.0,
+                  ),
+                ),
+                children: [
+                  _criarLinhaTable("Aplicativo"),
+                  _criarLinhaTable(" "),
+                  _criarLinhaTable(" "),
+                  _criarLinhaTable(" "),
+                  _criarLinhaTable(" "),
+                  _criarLinhaTable(" "),
+                  _criarLinhaTable(" "),
+                ],
+              ),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  _criarLinhaTable(String listaNomes) {
+    return TableRow(
+      children: listaNomes.split(',').map((name) {
+        return Container(
+          alignment: Alignment.center,
+          child: Text(
+            name,
+            style: TextStyle(fontSize: 10, color: Colors.black),
+          ),
+          padding: EdgeInsets.all(8.0),
+        );
+      }).toList(),
     );
   }
 }

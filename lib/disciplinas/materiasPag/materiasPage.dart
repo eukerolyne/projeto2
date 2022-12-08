@@ -16,7 +16,7 @@ class _MateriasPageState extends State<MateriasPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
-          "Matemática",
+          "Física",
           style: TextStyle(
               fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
         ),

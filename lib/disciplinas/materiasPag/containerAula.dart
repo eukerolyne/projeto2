@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto2/disciplinas/envioPag/envioPage.dart';
 import 'package:projeto2/disciplinas/materiasPag/materiasPage.dart';
 
 class ContainerAula extends StatelessWidget {
@@ -14,7 +15,7 @@ class ContainerAula extends StatelessWidget {
           left: 6,
         ),
         child: Container(
-          height: 112,
+          height: 120,
           width: 328,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
@@ -27,15 +28,15 @@ class ContainerAula extends StatelessWidget {
                 child: Row(
                   children: [
                     Container(
-                      width: 120,
-                      height: 32,
+                      width: 104,
+                      height: 24,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Color.fromRGBO(3, 166, 150, 1),
                       ),
                       child: Center(
                         child: Text(
-                          'Aula - 08/12/22',
+                          'Aula 1 - 19/09',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -47,25 +48,60 @@ class ContainerAula extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 224, top: 24),
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                      foregroundColor:
-                          MaterialStateProperty.all<Color>(Colors.white),
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                          Color.fromRGBO(1, 46, 64, 1)),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16, top: 8),
+                      child: Column(
+                        children: [
+                          Container(
+                            alignment: Alignment.topLeft,
+                            child: Text(
+                              'Aplicativo',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-
-                              /// A function that is called when the button is pressed.
-                              builder: (context) => MateriasPage()));
-                    },
-                    child: Text("Enviar"),
-                  ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 24),
+                          child: Text(
+                            'Atividade 08/12',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 80),
+                          child: ElevatedButton(
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Color.fromRGBO(1, 46, 64, 1)),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => EnvioPage()));
+                            },
+                            child: Text("Enviar"),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ],

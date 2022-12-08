@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:projeto2/disciplinas/materiasPag/materiasPage.dart';
 
-class ContainerAula extends StatelessWidget {
-  const ContainerAula({Key? key}) : super(key: key);
+class ContainerDetalhes extends StatelessWidget {
+  const ContainerDetalhes({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class ContainerAula extends StatelessWidget {
           left: 6,
         ),
         child: Container(
-          height: 112,
+          height: 120,
           width: 328,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
@@ -23,7 +23,7 @@ class ContainerAula extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 112),
+                padding: const EdgeInsets.only(left: 0),
                 child: Row(
                   children: [
                     Container(
@@ -35,7 +35,7 @@ class ContainerAula extends StatelessWidget {
                       ),
                       child: Center(
                         child: Text(
-                          'Aula - 08/12/22',
+                          'Detalhes',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -48,23 +48,12 @@ class ContainerAula extends StatelessWidget {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 224, top: 24),
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                      foregroundColor:
-                          MaterialStateProperty.all<Color>(Colors.white),
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                          Color.fromRGBO(1, 46, 64, 1)),
+                  padding: const EdgeInsets.only(left: 8),
+                  child: Text(
+                    'O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.',
+                    style: TextStyle(
+                      color: Colors.black,
                     ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-
-                              /// A function that is called when the button is pressed.
-                              builder: (context) => MateriasPage()));
-                    },
-                    child: Text("Enviar"),
                   ),
                 ),
               ),

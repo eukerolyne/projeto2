@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto2/batepapo/containers/containerBP.dart';
+import 'package:projeto2/batepapo/containers/containerFotobt.dart';
 
 class BatePapoPage extends StatefulWidget {
   const BatePapoPage({super.key});

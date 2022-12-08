@@ -18,22 +18,22 @@ class _NotasFreqPageState extends State<NotasFreqPage> {
         title: Text(
           "Notas e Frequência",
           style: TextStyle(
-              fontSize: 24, 
-              fontWeight: FontWeight.bold, 
-              color: Colors.white),
+              fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         backgroundColor: Color.fromRGBO(3, 166, 150, 1),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-          child: Center(
-            child: Container(
-              child: Column(
-                children: [
-                  ContainerNotas(),
-                  ContainerFrequencia(),
-                ],
+      body: Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+            child: Center(
+              child: Container(
+                child: Column(
+                  children: [
+                    ContainerNotas(),
+                    ContainerFrequencia(),
+                  ],
+                ),
               ),
             ),
           ),
