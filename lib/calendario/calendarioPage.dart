@@ -8,6 +8,7 @@ class CalendarioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
         title: const Text("Olá Kerolyne",
             style: TextStyle(

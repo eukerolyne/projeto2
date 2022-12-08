@@ -6,7 +6,10 @@ class PefilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+      ),
       body: Center(child: const Text("Perfil")),
     );
   }

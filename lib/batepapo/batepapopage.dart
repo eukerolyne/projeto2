@@ -12,13 +12,15 @@ class _BatePapoPageState extends State<BatePapoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
-          "Bate-Papo",
-          style: TextStyle(
-              fontSize: 24, 
-              fontWeight: FontWeight.bold, 
-              color: Colors.white),
+        automaticallyImplyLeading: false,
+        title: Center(
+          child: Text(
+            "Bate-Papo",
+            style: TextStyle(
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
         ),
         backgroundColor: Color.fromRGBO(3, 166, 150, 1),
       ),

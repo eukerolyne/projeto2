@@ -12,12 +12,15 @@ class DisciplinasPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Color.fromRGBO(3, 166, 150, 1),
-        title: const Text("Disciplinas",
-            style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.white)),
+        title: Center(
+          child: const Text("Disciplinas",
+              style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white)),
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -27,6 +30,12 @@ class DisciplinasPage extends StatelessWidget {
               child: Column(
                 children: [
                   ContainerAtveTrab(),
+                  ContainerMateria(),
+                  ContainerMateria(),
+                  ContainerMateria(),
+                  ContainerMateria(),
+                  ContainerMateria(),
+                  ContainerMateria(),
                   ContainerMateria(),
                   Container(
                     margin: const EdgeInsets.all(10.0),
